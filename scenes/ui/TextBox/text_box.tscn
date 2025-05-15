@@ -1,0 +1,298 @@
+[gd_scene load_steps=16 format=3 uid="uid://txcflde13308"]
+
+[ext_resource type="Script" uid="uid://cs1gpyob17i5m" path="res://scenes/ui/TextBox/dialog_manager.gd" id="1_iwu3v"]
+[ext_resource type="Script" uid="uid://b3d5yp5ge2wk2" path="res://scripts/dialog/dialog.gd" id="2_grdqn"]
+[ext_resource type="Script" uid="uid://dq4bajwjqnp53" path="res://scripts/dialog/dialog_choice.gd" id="3_f5pvu"]
+[ext_resource type="Script" uid="uid://5ylall6jftrs" path="res://scenes/ui/TextBox/sub_text.gd" id="4_7hpqk"]
+[ext_resource type="Script" uid="uid://ba7ux67euxl5s" path="res://scripts/dialog/text_group.gd" id="4_7oylq"]
+[ext_resource type="Script" uid="uid://vf85n3f1u1p2" path="res://scripts/dialog/illustration_state.gd" id="5_emxrh"]
+[ext_resource type="Script" uid="uid://dbxdwo3h2jrxx" path="res://scripts/dialog/huge_image_dialog.gd" id="6_kemrm"]
+[ext_resource type="Script" uid="uid://b7m3hln1ejoun" path="res://scripts/dialog/characters_dialog_group.gd" id="7_jlg5v"]
+
+[sub_resource type="Resource" id="Resource_grdqn"]
+script = ExtResource("4_7oylq")
+text = "大家好啊"
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_xngrp"]
+script = ExtResource("5_emxrh")
+illustration = 0
+emoji = 0
+position = Vector2(-1, -1)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = true
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_wfuja"]
+script = ExtResource("6_kemrm")
+illustrations = Array[ExtResource("5_emxrh")]([SubResource("Resource_xngrp")])
+character_name = ""
+content = Array[ExtResource("4_7oylq")]([SubResource("Resource_grdqn")])
+choices = Array[ExtResource("3_f5pvu")]([])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.03
+typing_group_delay = 0.03
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_f5pvu"]
+script = ExtResource("4_7oylq")
+text = "我在这里"
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_7oylq"]
+script = ExtResource("5_emxrh")
+illustration = 0
+emoji = 0
+position = Vector2(200, 200)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = true
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_emxrh"]
+script = ExtResource("6_kemrm")
+illustrations = Array[ExtResource("5_emxrh")]([SubResource("Resource_7oylq")])
+character_name = ""
+content = Array[ExtResource("4_7oylq")]([SubResource("Resource_f5pvu")])
+choices = Array[ExtResource("3_f5pvu")]([])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.03
+typing_group_delay = 0.03
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_o184e"]
+script = ExtResource("7_jlg5v")
+dialog_list = Array[ExtResource("2_grdqn")]([SubResource("Resource_wfuja"), SubResource("Resource_emxrh")])
+is_in_gaming = false
+can_move = false
+times = 1
+have_played = false
+id = ""
+index_change = 0
+metadata/_custom_type_script = "uid://b7m3hln1ejoun"
+
+[node name="TextBox" type="Control" node_paths=PackedStringArray("character_name_test", "text_box", "left_avatar", "right_avatar", "buttons", "option1", "option2", "option3", "option4", "up_area", "down_area", "input_line", "input_OK")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_iwu3v")
+character_name_test = NodePath("VBoxContainer/HBoxContainer/Panel/MarginContainer/VBoxContainer/Name")
+text_box = NodePath("VBoxContainer/HBoxContainer/Panel/MarginContainer/VBoxContainer/ScrollContainer/RichTextLabel")
+left_avatar = NodePath("VBoxContainer/HBoxContainer/LeftAvatar")
+right_avatar = NodePath("VBoxContainer/HBoxContainer/RightAvatar")
+buttons = NodePath("VBoxContainer/HBoxContainer/Panel/MarginContainer/VBoxContainer/Buttons")
+option1 = NodePath("VBoxContainer/HBoxContainer/Panel/MarginContainer/VBoxContainer/Buttons/HBoxContainer/CenterContainer/Option1")
+option2 = NodePath("VBoxContainer/HBoxContainer/Panel/MarginContainer/VBoxContainer/Buttons/HBoxContainer/CenterContainer2/Option2")
+option3 = NodePath("VBoxContainer/HBoxContainer/Panel/MarginContainer/VBoxContainer/Buttons/HBoxContainer2/CenterContainer3/Option3")
+option4 = NodePath("VBoxContainer/HBoxContainer/Panel/MarginContainer/VBoxContainer/Buttons/HBoxContainer2/CenterContainer4/Option4")
+up_area = NodePath("VBoxContainer/Control")
+down_area = NodePath("VBoxContainer/Control2")
+input_line = NodePath("VBoxContainer/HBoxContainer/Panel/MarginContainer/VBoxContainer/InputLine/LineEdit")
+input_OK = NodePath("VBoxContainer/HBoxContainer/Panel/MarginContainer/VBoxContainer/InputLine/input_OK_button")
+main_dialog = SubResource("Resource_o184e")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 1.5
+mouse_filter = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+z_index = 10
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="LeftAvatar" type="TextureRect" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 8
+expand_mode = 5
+stretch_mode = 5
+
+[node name="Panel" type="Panel" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.0
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HBoxContainer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer/Panel/MarginContainer"]
+layout_mode = 2
+
+[node name="Name" type="Label" parent="VBoxContainer/HBoxContainer/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "名字"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/HBoxContainer/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Content" type="Label" parent="VBoxContainer/HBoxContainer/Panel/MarginContainer/VBoxContainer/ScrollContainer"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 20
+text = "11111q11111q11111q11111q11111q11111q11111q11111q11111q"
+autowrap_mode = 3
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/HBoxContainer/Panel/MarginContainer/VBoxContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/normal_font_size = 32
+theme_override_font_sizes/bold_font_size = 36
+bbcode_enabled = true
+text = "123qewrwqweweweweweweweweweweweweweweweweweweweweweweweweweweweweweweweweweweweweweweweweqwerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr"
+
+[node name="Buttons" type="VBoxContainer" parent="VBoxContainer/HBoxContainer/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/Panel/MarginContainer/VBoxContainer/Buttons"]
+layout_mode = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/HBoxContainer/Panel/MarginContainer/VBoxContainer/Buttons/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Option1" type="Button" parent="VBoxContainer/HBoxContainer/Panel/MarginContainer/VBoxContainer/Buttons/HBoxContainer/CenterContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_neighbor_left = NodePath(".")
+focus_neighbor_top = NodePath(".")
+focus_neighbor_right = NodePath("../../CenterContainer2/Option2")
+focus_neighbor_bottom = NodePath("../../../HBoxContainer2/CenterContainer3/Option3")
+theme_override_font_sizes/font_size = 30
+text = "确认"
+
+[node name="CenterContainer2" type="CenterContainer" parent="VBoxContainer/HBoxContainer/Panel/MarginContainer/VBoxContainer/Buttons/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Option2" type="Button" parent="VBoxContainer/HBoxContainer/Panel/MarginContainer/VBoxContainer/Buttons/HBoxContainer/CenterContainer2"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_neighbor_left = NodePath("../../CenterContainer/Option1")
+focus_neighbor_top = NodePath(".")
+focus_neighbor_right = NodePath(".")
+focus_neighbor_bottom = NodePath("../../../HBoxContainer2/CenterContainer4/Option4")
+theme_override_font_sizes/font_size = 30
+text = "确认"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/Panel/MarginContainer/VBoxContainer/Buttons"]
+layout_mode = 2
+
+[node name="CenterContainer3" type="CenterContainer" parent="VBoxContainer/HBoxContainer/Panel/MarginContainer/VBoxContainer/Buttons/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Option3" type="Button" parent="VBoxContainer/HBoxContainer/Panel/MarginContainer/VBoxContainer/Buttons/HBoxContainer2/CenterContainer3"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_neighbor_left = NodePath(".")
+focus_neighbor_top = NodePath("../../../HBoxContainer/CenterContainer/Option1")
+focus_neighbor_right = NodePath("../../CenterContainer4/Option4")
+focus_neighbor_bottom = NodePath(".")
+theme_override_font_sizes/font_size = 30
+text = "确认"
+
+[node name="CenterContainer4" type="CenterContainer" parent="VBoxContainer/HBoxContainer/Panel/MarginContainer/VBoxContainer/Buttons/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Option4" type="Button" parent="VBoxContainer/HBoxContainer/Panel/MarginContainer/VBoxContainer/Buttons/HBoxContainer2/CenterContainer4"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_neighbor_left = NodePath("../../CenterContainer3/Option3")
+focus_neighbor_top = NodePath("../../../HBoxContainer/CenterContainer2/Option2")
+focus_neighbor_right = NodePath(".")
+focus_neighbor_bottom = NodePath(".")
+theme_override_font_sizes/font_size = 30
+text = "确认"
+
+[node name="InputLine" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer/HBoxContainer/Panel/MarginContainer/VBoxContainer/InputLine"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/Panel/MarginContainer/VBoxContainer/InputLine/LineEdit"]
+self_modulate = Color(1, 1, 1, 0.313726)
+layout_mode = 0
+offset_left = 3.0
+offset_top = 3.0
+offset_right = 67.0
+offset_bottom = 26.0
+text = "点击输入"
+script = ExtResource("4_7hpqk")
+
+[node name="input_OK_button" type="Button" parent="VBoxContainer/HBoxContainer/Panel/MarginContainer/VBoxContainer/InputLine"]
+layout_mode = 2
+text = "OK"
+
+[node name="RightAvatar" type="TextureRect" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 8
+expand_mode = 5
+stretch_mode = 5
+
+[node name="Control2" type="Control" parent="VBoxContainer"]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.0
+
+[connection signal="gui_input" from="VBoxContainer" to="." method="_on_click"]
+[connection signal="gui_input" from="VBoxContainer/HBoxContainer/Panel" to="." method="_on_click"]
+[connection signal="gui_input" from="VBoxContainer/HBoxContainer/Panel/MarginContainer/VBoxContainer/ScrollContainer/RichTextLabel" to="." method="_on_click"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Panel/MarginContainer/VBoxContainer/Buttons/HBoxContainer/CenterContainer/Option1" to="." method="_on_option_1_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Panel/MarginContainer/VBoxContainer/Buttons/HBoxContainer/CenterContainer2/Option2" to="." method="_on_option_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Panel/MarginContainer/VBoxContainer/Buttons/HBoxContainer2/CenterContainer3/Option3" to="." method="_on_option_3_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Panel/MarginContainer/VBoxContainer/Buttons/HBoxContainer2/CenterContainer4/Option4" to="." method="_on_option_4_pressed"]
+[connection signal="editing_toggled" from="VBoxContainer/HBoxContainer/Panel/MarginContainer/VBoxContainer/InputLine/LineEdit" to="VBoxContainer/HBoxContainer/Panel/MarginContainer/VBoxContainer/InputLine/LineEdit/Label" method="_on_line_edit_editing_toggled"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Panel/MarginContainer/VBoxContainer/InputLine/input_OK_button" to="." method="_on_input_ok_button_pressed"]

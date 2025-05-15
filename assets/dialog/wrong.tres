@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="DialogGroup" load_steps=10 format=3 uid="uid://brqcp0sea3l2i"]
+
+[ext_resource type="Script" uid="uid://b3d5yp5ge2wk2" path="res://scripts/dialog/dialog.gd" id="1_lukaq"]
+[ext_resource type="Script" uid="uid://dq4bajwjqnp53" path="res://scripts/dialog/dialog_choice.gd" id="2_4x0co"]
+[ext_resource type="Script" uid="uid://ba7ux67euxl5s" path="res://scripts/dialog/text_group.gd" id="3_5xfei"]
+[ext_resource type="Script" uid="uid://vf85n3f1u1p2" path="res://scripts/dialog/illustration_state.gd" id="4_dc3vy"]
+[ext_resource type="Script" uid="uid://dbxdwo3h2jrxx" path="res://scripts/dialog/huge_image_dialog.gd" id="5_e1dol"]
+[ext_resource type="Script" uid="uid://j2uk611rd7j4" path="res://scripts/dialog/dialog_group.gd" id="6_4ctbj"]
+
+[sub_resource type="Resource" id="Resource_0mm2c"]
+script = ExtResource("3_5xfei")
+text = "答错了哦"
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_c118n"]
+script = ExtResource("4_dc3vy")
+illustration = 0
+emoji = 0
+position = Vector2(350, 100)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = true
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_wnjdx"]
+script = ExtResource("5_e1dol")
+illustrations = Array[ExtResource("4_dc3vy")]([SubResource("Resource_c118n")])
+character_name = "老师"
+content = Array[ExtResource("3_5xfei")]([SubResource("Resource_0mm2c")])
+choices = Array[ExtResource("2_4x0co")]([])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.02
+typing_group_delay = 0.02
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[resource]
+script = ExtResource("6_4ctbj")
+dialog_list = Array[ExtResource("1_lukaq")]([SubResource("Resource_wnjdx")])
+is_in_gaming = false
+can_move = false
+times = 1
+have_played = false
+id = ""
+index_change = -1
+metadata/_custom_type_script = "uid://j2uk611rd7j4"

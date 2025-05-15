@@ -1,0 +1,3 @@
+extends DialogGroup
+class_name CharactersDialogGroup
+var illustrations:Array[CharacterImageGroup.Characters]

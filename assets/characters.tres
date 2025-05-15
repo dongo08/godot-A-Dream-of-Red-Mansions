@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="CharacterEmotionGroup" load_steps=15 format=3 uid="uid://cwggjy3xe8syt"]
+
+[ext_resource type="Script" uid="uid://ctgoqxq4j3e1w" path="res://scripts/dialog/texture_group.gd" id="1_qeva2"]
+[ext_resource type="Texture2D" uid="uid://cx1v88ips4mo7" path="res://assets/sprite/3654011.png" id="2_vsh6a"]
+[ext_resource type="Script" uid="uid://bl8wacdw8p4gd" path="res://scripts/dialog/character_emotion_group.gd" id="3_fneuy"]
+[ext_resource type="Texture2D" uid="uid://bb7bj36lnh23v" path="res://assets/sprite/R (1).png" id="3_vsh6a"]
+[ext_resource type="Texture2D" uid="uid://c2vhvpruivy7x" path="res://assets/sprite/v2-6b6b62f24a77e34b8d9d62876853b082_r.png" id="4_fneuy"]
+[ext_resource type="Texture2D" uid="uid://pbhdvfa48asw" path="res://assets/sprite/未标题-123123.png" id="5_e2bcg"]
+[ext_resource type="Texture2D" uid="uid://wur0deergple" path="res://assets/sprite/OIP (2).png" id="6_vbsom"]
+[ext_resource type="Texture2D" uid="uid://ju3axrl501n2" path="res://assets/sprite/R (3).png" id="7_e27a7"]
+
+[sub_resource type="Resource" id="Resource_qb5ev"]
+script = ExtResource("1_qeva2")
+image_group = Array[Texture2D]([ExtResource("2_vsh6a")])
+metadata/_custom_type_script = "uid://ctgoqxq4j3e1w"
+
+[sub_resource type="Resource" id="Resource_e2bcg"]
+script = ExtResource("1_qeva2")
+image_group = Array[Texture2D]([ExtResource("3_vsh6a")])
+metadata/_custom_type_script = "uid://ctgoqxq4j3e1w"
+
+[sub_resource type="Resource" id="Resource_5pbge"]
+script = ExtResource("1_qeva2")
+image_group = Array[Texture2D]([ExtResource("4_fneuy")])
+metadata/_custom_type_script = "uid://ctgoqxq4j3e1w"
+
+[sub_resource type="Resource" id="Resource_vbsom"]
+script = ExtResource("1_qeva2")
+image_group = Array[Texture2D]([ExtResource("5_e2bcg")])
+metadata/_custom_type_script = "uid://ctgoqxq4j3e1w"
+
+[sub_resource type="Resource" id="Resource_ql5xy"]
+script = ExtResource("1_qeva2")
+image_group = Array[Texture2D]([ExtResource("6_vbsom")])
+metadata/_custom_type_script = "uid://ctgoqxq4j3e1w"
+
+[sub_resource type="Resource" id="Resource_6pxvv"]
+script = ExtResource("1_qeva2")
+image_group = Array[Texture2D]([ExtResource("7_e27a7")])
+metadata/_custom_type_script = "uid://ctgoqxq4j3e1w"
+
+[resource]
+script = ExtResource("3_fneuy")
+group = Array[ExtResource("1_qeva2")]([SubResource("Resource_qb5ev"), SubResource("Resource_e2bcg"), SubResource("Resource_5pbge"), SubResource("Resource_vbsom"), SubResource("Resource_ql5xy"), SubResource("Resource_6pxvv")])
+metadata/_custom_type_script = "uid://bl8wacdw8p4gd"

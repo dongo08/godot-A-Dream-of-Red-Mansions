@@ -1,0 +1,1404 @@
+[gd_scene load_steps=146 format=3 uid="uid://s6cucgx26kbh"]
+
+[ext_resource type="Script" uid="uid://lhiow53mtnbo" path="res://scenes/story/story_1.gd" id="1_5vrsw"]
+[ext_resource type="AudioStream" uid="uid://bxv1jflfcbrwg" path="res://assets/audio/「碧蓝档案OST🎵」音乐合集~Vol.1（320K）_P32_MX Adventure（编队）_音频_01_01.ogg" id="1_tcwag"]
+[ext_resource type="Script" uid="uid://bsdjjcedhdd4g" path="res://scenes/story/audio_stream_player.gd" id="2_f5gp7"]
+[ext_resource type="PackedScene" uid="uid://txcflde13308" path="res://scenes/ui/TextBox/text_box.tscn" id="2_hsn2m"]
+[ext_resource type="Texture2D" uid="uid://7fdfqty15ha4" path="res://assets/sprite/3e9feac7ce107011df8e1ff46432849cd8283384_size594_w1600_h875.jpeg" id="2_oakra"]
+[ext_resource type="PackedScene" uid="uid://dekecawgal6xg" path="res://scenes/ui/menu.tscn" id="3_d0kq8"]
+[ext_resource type="Script" uid="uid://b3d5yp5ge2wk2" path="res://scripts/dialog/dialog.gd" id="4_d5xk7"]
+[ext_resource type="Script" uid="uid://dq4bajwjqnp53" path="res://scripts/dialog/dialog_choice.gd" id="5_l1mgl"]
+[ext_resource type="Script" uid="uid://ba7ux67euxl5s" path="res://scripts/dialog/text_group.gd" id="6_5vrsw"]
+[ext_resource type="Script" uid="uid://vf85n3f1u1p2" path="res://scripts/dialog/illustration_state.gd" id="7_oakra"]
+[ext_resource type="Script" uid="uid://dbxdwo3h2jrxx" path="res://scripts/dialog/huge_image_dialog.gd" id="8_dchda"]
+[ext_resource type="Resource" uid="uid://brqcp0sea3l2i" path="res://assets/dialog/wrong.tres" id="9_l1mgl"]
+[ext_resource type="Script" uid="uid://b7m3hln1ejoun" path="res://scripts/dialog/characters_dialog_group.gd" id="9_lfwuu"]
+
+[sub_resource type="Resource" id="Resource_d5xk7"]
+script = ExtResource("6_5vrsw")
+text = "大家好啊"
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_l1mgl"]
+script = ExtResource("7_oakra")
+illustration = 0
+emoji = 0
+position = Vector2(0, 100)
+animation = "jump"
+trans = 4
+is_appear = true
+is_focus = true
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_471kl"]
+script = ExtResource("8_dchda")
+illustrations = Array[ExtResource("7_oakra")]([SubResource("Resource_l1mgl")])
+character_name = "老师"
+content = Array[ExtResource("6_5vrsw")]([SubResource("Resource_d5xk7")])
+choices = Array[ExtResource("5_l1mgl")]([])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.03
+typing_group_delay = 0.03
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_5vrsw"]
+script = ExtResource("6_5vrsw")
+text = "今天我们来讲讲《红楼梦》中的美食"
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_utkja"]
+script = ExtResource("7_oakra")
+illustration = 0
+emoji = 0
+position = Vector2(250, 100)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = true
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_oakra"]
+script = ExtResource("8_dchda")
+illustrations = Array[ExtResource("7_oakra")]([SubResource("Resource_utkja")])
+character_name = "老师"
+content = Array[ExtResource("6_5vrsw")]([SubResource("Resource_5vrsw")])
+choices = Array[ExtResource("5_l1mgl")]([])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.03
+typing_group_delay = 0.03
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_dchda"]
+script = ExtResource("6_5vrsw")
+text = "那么众所周知"
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_lfwuu"]
+script = ExtResource("8_dchda")
+illustrations = Array[ExtResource("7_oakra")]([])
+character_name = "老师"
+content = Array[ExtResource("6_5vrsw")]([SubResource("Resource_dchda")])
+choices = Array[ExtResource("5_l1mgl")]([])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.03
+typing_group_delay = 0.03
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_tihn8"]
+script = ExtResource("6_5vrsw")
+text = "中华文化以美食而闻名"
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_cq863"]
+script = ExtResource("8_dchda")
+illustrations = Array[ExtResource("7_oakra")]([])
+character_name = "老师"
+content = Array[ExtResource("6_5vrsw")]([SubResource("Resource_tihn8")])
+choices = Array[ExtResource("5_l1mgl")]([])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.03
+typing_group_delay = 0.03
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_cnuy5"]
+script = ExtResource("6_5vrsw")
+text = "所以《红楼梦》作为一部描绘清代贵族生活的经典巨著，其中对饮食文化的描写极为细腻。"
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_h32mu"]
+script = ExtResource("8_dchda")
+illustrations = Array[ExtResource("7_oakra")]([])
+character_name = "老师"
+content = Array[ExtResource("6_5vrsw")]([SubResource("Resource_cnuy5")])
+choices = Array[ExtResource("5_l1mgl")]([])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.03
+typing_group_delay = 0.03
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_bxwxf"]
+script = ExtResource("6_5vrsw")
+text = "首先是茄鲞（xiǎng）"
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_4fwlh"]
+script = ExtResource("7_oakra")
+illustration = 0
+emoji = 0
+position = Vector2(100, 100)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = true
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_vfd3t"]
+script = ExtResource("7_oakra")
+illustration = 1
+emoji = 0
+position = Vector2(500, 200)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = true
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_m7kom"]
+script = ExtResource("8_dchda")
+illustrations = Array[ExtResource("7_oakra")]([SubResource("Resource_4fwlh"), SubResource("Resource_vfd3t")])
+character_name = "老师"
+content = Array[ExtResource("6_5vrsw")]([SubResource("Resource_bxwxf")])
+choices = Array[ExtResource("5_l1mgl")]([])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.03
+typing_group_delay = 0.03
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_jdg44"]
+script = ExtResource("6_5vrsw")
+text = "它的出处是第41回。刘姥姥进大观园时，凤姐以此菜展示贾府的奢华。"
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_80l1u"]
+script = ExtResource("7_oakra")
+illustration = 0
+emoji = 0
+position = Vector2(100, 100)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = true
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_bgtqu"]
+script = ExtResource("7_oakra")
+illustration = 1
+emoji = 0
+position = Vector2(500, 200)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = false
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_21wge"]
+script = ExtResource("8_dchda")
+illustrations = Array[ExtResource("7_oakra")]([SubResource("Resource_80l1u"), SubResource("Resource_bgtqu")])
+character_name = "老师"
+content = Array[ExtResource("6_5vrsw")]([SubResource("Resource_jdg44")])
+choices = Array[ExtResource("5_l1mgl")]([])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.03
+typing_group_delay = 0.03
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_jkveg"]
+script = ExtResource("6_5vrsw")
+text = "我可是很尊贵的"
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_1hgfr"]
+script = ExtResource("7_oakra")
+illustration = 0
+emoji = 0
+position = Vector2(100, 100)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = false
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_bjx3e"]
+script = ExtResource("7_oakra")
+illustration = 1
+emoji = 0
+position = Vector2(500, 200)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = true
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_cp7ex"]
+script = ExtResource("8_dchda")
+illustrations = Array[ExtResource("7_oakra")]([SubResource("Resource_1hgfr"), SubResource("Resource_bjx3e")])
+character_name = "茄鲞（xiǎng）"
+content = Array[ExtResource("6_5vrsw")]([SubResource("Resource_jkveg")])
+choices = Array[ExtResource("5_l1mgl")]([])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.03
+typing_group_delay = 0.03
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_1teqn"]
+script = ExtResource("6_5vrsw")
+text = "确实，它的做法就只能用奢华来形容了。茄子需去皮切丁，用鸡油炸后混合鸡脯肉、香菌、笋干、五香豆腐干等十余种配料，最后以鸡汤收干，香油封存。"
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_upyqa"]
+script = ExtResource("7_oakra")
+illustration = 0
+emoji = 0
+position = Vector2(100, 100)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = true
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_0bo16"]
+script = ExtResource("7_oakra")
+illustration = 1
+emoji = 0
+position = Vector2(500, 200)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = false
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_uraqp"]
+script = ExtResource("8_dchda")
+illustrations = Array[ExtResource("7_oakra")]([SubResource("Resource_upyqa"), SubResource("Resource_0bo16")])
+character_name = "老师"
+content = Array[ExtResource("6_5vrsw")]([SubResource("Resource_1teqn")])
+choices = Array[ExtResource("5_l1mgl")]([])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.03
+typing_group_delay = 0.03
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_t3kct"]
+script = ExtResource("6_5vrsw")
+text = "可以说是相当的美味口牙！"
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_bfokr"]
+script = ExtResource("8_dchda")
+illustrations = Array[ExtResource("7_oakra")]([])
+character_name = "老师"
+content = Array[ExtResource("6_5vrsw")]([SubResource("Resource_t3kct")])
+choices = Array[ExtResource("5_l1mgl")]([])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.03
+typing_group_delay = 0.03
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_0i02e"]
+script = ExtResource("6_5vrsw")
+text = "虽然我没吃过，但是这道菜可是当初刘姥姥吃过的"
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_isckm"]
+script = ExtResource("7_oakra")
+illustration = 3
+emoji = 0
+position = Vector2(-100, 100)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = false
+Z_index = 0
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_f7mqe"]
+script = ExtResource("8_dchda")
+illustrations = Array[ExtResource("7_oakra")]([SubResource("Resource_isckm")])
+character_name = "老师"
+content = Array[ExtResource("6_5vrsw")]([SubResource("Resource_0i02e")])
+choices = Array[ExtResource("5_l1mgl")]([])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.03
+typing_group_delay = 0.03
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_l45xl"]
+script = ExtResource("6_5vrsw")
+text = "刘姥姥进大观园，凤姐神秘兮兮端上一盘黑乎乎的菜：“姥姥尝尝，这叫‘茄鲞（xiǎng）’！”"
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_ougrc"]
+script = ExtResource("7_oakra")
+illustration = 1
+emoji = 0
+position = Vector2(600, 200)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = false
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_r2oat"]
+script = ExtResource("7_oakra")
+illustration = 3
+emoji = 0
+position = Vector2(100, 100)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = false
+Z_index = 0
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_g28v5"]
+script = ExtResource("8_dchda")
+illustrations = Array[ExtResource("7_oakra")]([SubResource("Resource_ougrc"), SubResource("Resource_r2oat")])
+character_name = "老师"
+content = Array[ExtResource("6_5vrsw")]([SubResource("Resource_l45xl")])
+choices = Array[ExtResource("5_l1mgl")]([])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.03
+typing_group_delay = 0.03
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_0w2el"]
+script = ExtResource("6_5vrsw")
+text = "刘姥姥吃了以后说：“别哄我了，茄子跑出这样的味来了，我们也不种粮食，只种茄子了！”"
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_4a0j6"]
+script = ExtResource("7_oakra")
+illustration = 1
+emoji = 0
+position = Vector2(1500, 200)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = false
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_pqhhu"]
+script = ExtResource("7_oakra")
+illustration = 3
+emoji = 0
+position = Vector2(1400, 100)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = false
+Z_index = 0
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_h716d"]
+script = ExtResource("8_dchda")
+illustrations = Array[ExtResource("7_oakra")]([SubResource("Resource_4a0j6"), SubResource("Resource_pqhhu")])
+character_name = "老师"
+content = Array[ExtResource("6_5vrsw")]([SubResource("Resource_0w2el")])
+choices = Array[ExtResource("5_l1mgl")]([])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.03
+typing_group_delay = 0.03
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_in3p5"]
+script = ExtResource("6_5vrsw")
+text = "这就说明，这道菜是绝非常人见过、吃过的。"
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_w2b3s"]
+script = ExtResource("7_oakra")
+illustration = 0
+emoji = 0
+position = Vector2(250, 100)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = true
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_kcnyj"]
+script = ExtResource("7_oakra")
+illustration = 1
+emoji = 0
+position = Vector2(-1, -1)
+animation = ""
+trans = 4
+is_appear = false
+is_focus = false
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_ygn3x"]
+script = ExtResource("8_dchda")
+illustrations = Array[ExtResource("7_oakra")]([SubResource("Resource_w2b3s"), SubResource("Resource_kcnyj")])
+character_name = "老师"
+content = Array[ExtResource("6_5vrsw")]([SubResource("Resource_in3p5")])
+choices = Array[ExtResource("5_l1mgl")]([])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.03
+typing_group_delay = 0.03
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_ggpv2"]
+script = ExtResource("6_5vrsw")
+text = "如果我们再深入思考，就会发现一些作者隐藏起来的情感：这道菜以“素菜荤做”的繁复工艺，暗喻贵族生活的铺张浪费，与刘姥姥惊叹“倒得十几只鸡来配它”形成鲜明对比，突显了阶级差异。
+"
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_21py2"]
+script = ExtResource("7_oakra")
+illustration = 0
+emoji = 0
+position = Vector2(350, 100)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = true
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_bgo3x"]
+script = ExtResource("8_dchda")
+illustrations = Array[ExtResource("7_oakra")]([SubResource("Resource_21py2")])
+character_name = "老师"
+content = Array[ExtResource("6_5vrsw")]([SubResource("Resource_ggpv2")])
+choices = Array[ExtResource("5_l1mgl")]([])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.03
+typing_group_delay = 0.03
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_mrr0u"]
+script = ExtResource("6_5vrsw")
+text = "接下来的一个，就是贾宝玉喜欢的莲叶羹了"
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_mf15r"]
+script = ExtResource("8_dchda")
+illustrations = Array[ExtResource("7_oakra")]([])
+character_name = "老师"
+content = Array[ExtResource("6_5vrsw")]([SubResource("Resource_mrr0u")])
+choices = Array[ExtResource("5_l1mgl")]([])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.03
+typing_group_delay = 0.03
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_gsnn1"]
+script = ExtResource("6_5vrsw")
+text = "就是我！"
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_1swih"]
+script = ExtResource("7_oakra")
+illustration = 0
+emoji = 0
+position = Vector2(100, 100)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = false
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_iuedw"]
+script = ExtResource("7_oakra")
+illustration = 2
+emoji = 0
+position = Vector2(400, 100)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = true
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_svc2d"]
+script = ExtResource("8_dchda")
+illustrations = Array[ExtResource("7_oakra")]([SubResource("Resource_1swih"), SubResource("Resource_iuedw")])
+character_name = "莲叶羹"
+content = Array[ExtResource("6_5vrsw")]([SubResource("Resource_gsnn1")])
+choices = Array[ExtResource("5_l1mgl")]([])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.03
+typing_group_delay = 0.03
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_nthmf"]
+script = ExtResource("6_5vrsw")
+text = "那么有同学就会想：一个莲叶羹而已，不就是汤汤水水，怎么会被宝玉所喜爱呢？"
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_e3eub"]
+script = ExtResource("7_oakra")
+illustration = 0
+emoji = 0
+position = Vector2(350, 100)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = true
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_m266e"]
+script = ExtResource("7_oakra")
+illustration = 2
+emoji = 0
+position = Vector2(650, 100)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = false
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_hpb8e"]
+script = ExtResource("8_dchda")
+illustrations = Array[ExtResource("7_oakra")]([SubResource("Resource_e3eub"), SubResource("Resource_m266e")])
+character_name = "老师"
+content = Array[ExtResource("6_5vrsw")]([SubResource("Resource_nthmf")])
+choices = Array[ExtResource("5_l1mgl")]([])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.03
+typing_group_delay = 0.03
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_srtdh"]
+script = ExtResource("6_5vrsw")
+text = "什么叫“汤汤水水”？也不看看我和其他菜的区别？"
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_witkx"]
+script = ExtResource("7_oakra")
+illustration = 0
+emoji = 0
+position = Vector2(0, 100)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = false
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_43mwd"]
+script = ExtResource("7_oakra")
+illustration = 2
+emoji = 0
+position = Vector2(350, 100)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = true
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_hqmqc"]
+script = ExtResource("8_dchda")
+illustrations = Array[ExtResource("7_oakra")]([SubResource("Resource_witkx"), SubResource("Resource_43mwd")])
+character_name = "莲叶羹"
+content = Array[ExtResource("6_5vrsw")]([SubResource("Resource_srtdh")])
+choices = Array[ExtResource("5_l1mgl")]([])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.03
+typing_group_delay = 0.03
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_r0a1d"]
+script = ExtResource("6_5vrsw")
+text = "是这样的，它当然有自己的特色：用模具将面制成莲蓬、菱角等形状，以荷叶熬制的清汤煮成，当然也少不了肉汤。"
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_nrjb3"]
+script = ExtResource("7_oakra")
+illustration = 0
+emoji = 0
+position = Vector2(350, 100)
+animation = ""
+trans = 10
+is_appear = true
+is_focus = true
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_74vxf"]
+script = ExtResource("7_oakra")
+illustration = 2
+emoji = 0
+position = Vector2(1600, 100)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = false
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_gc0s6"]
+script = ExtResource("8_dchda")
+illustrations = Array[ExtResource("7_oakra")]([SubResource("Resource_nrjb3"), SubResource("Resource_74vxf")])
+character_name = "老师"
+content = Array[ExtResource("6_5vrsw")]([SubResource("Resource_r0a1d")])
+choices = Array[ExtResource("5_l1mgl")]([])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.03
+typing_group_delay = 0.03
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_lyoqu"]
+script = ExtResource("6_5vrsw")
+text = "这就使得它无论是外观上还是味道上都是无与伦比的。可以说，在当时，制作一碗还是非常困难的"
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_nadpk"]
+script = ExtResource("8_dchda")
+illustrations = Array[ExtResource("7_oakra")]([])
+character_name = "老师"
+content = Array[ExtResource("6_5vrsw")]([SubResource("Resource_lyoqu")])
+choices = Array[ExtResource("5_l1mgl")]([])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.03
+typing_group_delay = 0.03
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_vkeia"]
+script = ExtResource("6_5vrsw")
+text = "那么，第三道菜品就是枣泥山药糕了"
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_7pt7c"]
+script = ExtResource("7_oakra")
+illustration = 0
+emoji = 0
+position = Vector2(300, 100)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = true
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_yck34"]
+script = ExtResource("7_oakra")
+illustration = 4
+emoji = 0
+position = Vector2(700, 100)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = true
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_t353k"]
+script = ExtResource("8_dchda")
+illustrations = Array[ExtResource("7_oakra")]([SubResource("Resource_7pt7c"), SubResource("Resource_yck34")])
+character_name = "老师"
+content = Array[ExtResource("6_5vrsw")]([SubResource("Resource_vkeia")])
+choices = Array[ExtResource("5_l1mgl")]([])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.03
+typing_group_delay = 0.03
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_mfobw"]
+script = ExtResource("6_5vrsw")
+text = "这道菜可是救过某人的命呢"
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_33dv4"]
+script = ExtResource("7_oakra")
+illustration = 4
+emoji = 0
+position = Vector2(800, 100)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = false
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_4y5bj"]
+script = ExtResource("8_dchda")
+illustrations = Array[ExtResource("7_oakra")]([SubResource("Resource_33dv4")])
+character_name = "老师"
+content = Array[ExtResource("6_5vrsw")]([SubResource("Resource_mfobw")])
+choices = Array[ExtResource("5_l1mgl")]([])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.03
+typing_group_delay = 0.03
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_m4ogr"]
+script = ExtResource("6_5vrsw")
+text = "那么... "
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_its4p"]
+script = ExtResource("6_5vrsw")
+text = "突 "
+special_effect = "b"
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_d0jbd"]
+script = ExtResource("6_5vrsw")
+text = "击 "
+special_effect = "b"
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_rcn26"]
+script = ExtResource("6_5vrsw")
+text = "检 "
+special_effect = "b"
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_7o832"]
+script = ExtResource("6_5vrsw")
+text = "查！"
+special_effect = "b"
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_c4k7y"]
+script = ExtResource("7_oakra")
+illustration = 0
+emoji = 0
+position = Vector2(350, 100)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = true
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_4447g"]
+script = ExtResource("7_oakra")
+illustration = 4
+emoji = 0
+position = Vector2(800, 100)
+animation = ""
+trans = 4
+is_appear = false
+is_focus = false
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_32c0v"]
+script = ExtResource("8_dchda")
+illustrations = Array[ExtResource("7_oakra")]([SubResource("Resource_c4k7y"), SubResource("Resource_4447g")])
+character_name = "老师"
+content = Array[ExtResource("6_5vrsw")]([SubResource("Resource_m4ogr"), SubResource("Resource_its4p"), SubResource("Resource_d0jbd"), SubResource("Resource_rcn26"), SubResource("Resource_7o832")])
+choices = Array[ExtResource("5_l1mgl")]([])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.05
+typing_group_delay = 0.1
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_aumhy"]
+script = ExtResource("5_l1mgl")
+text = "一定是贾宝玉吧！"
+target_group = ExtResource("9_l1mgl")
+condition = ""
+dialog_events = Array[String]([])
+dialog_self_call = Array[String]([])
+metadata/_custom_type_script = "uid://dq4bajwjqnp53"
+
+[sub_resource type="Resource" id="Resource_xr2v0"]
+script = ExtResource("5_l1mgl")
+text = "必定是林黛玉！"
+target_group = ExtResource("9_l1mgl")
+condition = ""
+dialog_events = Array[String]([])
+dialog_self_call = Array[String]([])
+metadata/_custom_type_script = "uid://dq4bajwjqnp53"
+
+[sub_resource type="Resource" id="Resource_4yjot"]
+script = ExtResource("5_l1mgl")
+text = "可能是王熙凤？"
+target_group = ExtResource("9_l1mgl")
+condition = ""
+dialog_events = Array[String]([])
+dialog_self_call = Array[String]([])
+metadata/_custom_type_script = "uid://dq4bajwjqnp53"
+
+[sub_resource type="Resource" id="Resource_ih5bc"]
+script = ExtResource("5_l1mgl")
+text = "好像是某个姓秦的来着"
+condition = ""
+dialog_events = Array[String]([])
+dialog_self_call = Array[String]([])
+metadata/_custom_type_script = "uid://dq4bajwjqnp53"
+
+[sub_resource type="Resource" id="Resource_mr6e7"]
+script = ExtResource("6_5vrsw")
+text = "请问枣泥山楂糕救过谁的命？"
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_hrdsy"]
+script = ExtResource("7_oakra")
+illustration = 0
+emoji = 0
+position = Vector2(350, 50)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = true
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_lvet4"]
+script = ExtResource("8_dchda")
+illustrations = Array[ExtResource("7_oakra")]([SubResource("Resource_hrdsy")])
+character_name = "老师"
+content = Array[ExtResource("6_5vrsw")]([SubResource("Resource_mr6e7")])
+choices = Array[ExtResource("5_l1mgl")]([SubResource("Resource_aumhy"), SubResource("Resource_xr2v0"), SubResource("Resource_4yjot"), SubResource("Resource_ih5bc")])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.03
+typing_group_delay = 0.03
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_cnwlv"]
+script = ExtResource("5_l1mgl")
+text = "秦可卿？"
+condition = ""
+dialog_events = Array[String]([])
+dialog_self_call = Array[String]([])
+metadata/_custom_type_script = "uid://dq4bajwjqnp53"
+
+[sub_resource type="Resource" id="Resource_al5ll"]
+script = ExtResource("5_l1mgl")
+text = "秦钟？"
+target_group = ExtResource("9_l1mgl")
+condition = ""
+dialog_events = Array[String]([])
+dialog_self_call = Array[String]([])
+metadata/_custom_type_script = "uid://dq4bajwjqnp53"
+
+[sub_resource type="Resource" id="Resource_2lmip"]
+script = ExtResource("5_l1mgl")
+text = "秦业？"
+target_group = ExtResource("9_l1mgl")
+condition = ""
+dialog_events = Array[String]([])
+dialog_self_call = Array[String]([])
+metadata/_custom_type_script = "uid://dq4bajwjqnp53"
+
+[sub_resource type="Resource" id="Resource_nvhr5"]
+script = ExtResource("5_l1mgl")
+text = "秦显家的？"
+target_group = ExtResource("9_l1mgl")
+condition = ""
+dialog_events = Array[String]([])
+dialog_self_call = Array[String]([])
+metadata/_custom_type_script = "uid://dq4bajwjqnp53"
+
+[sub_resource type="Resource" id="Resource_i5axr"]
+script = ExtResource("6_5vrsw")
+text = "没错！那究竟是哪位呢？"
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_2w0f5"]
+script = ExtResource("7_oakra")
+illustration = 0
+emoji = 0
+position = Vector2(350, 50)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = true
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_c3v7p"]
+script = ExtResource("8_dchda")
+illustrations = Array[ExtResource("7_oakra")]([SubResource("Resource_2w0f5")])
+character_name = "老师"
+content = Array[ExtResource("6_5vrsw")]([SubResource("Resource_i5axr")])
+choices = Array[ExtResource("5_l1mgl")]([SubResource("Resource_cnwlv"), SubResource("Resource_al5ll"), SubResource("Resource_2lmip"), SubResource("Resource_nvhr5")])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.03
+typing_group_delay = 0.03
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_wvth3"]
+script = ExtResource("6_5vrsw")
+text = "没错！这点心可是救了秦可卿的命呢！"
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_5rdh6"]
+script = ExtResource("7_oakra")
+illustration = 0
+emoji = 0
+position = Vector2(350, 100)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = true
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_cw6vh"]
+script = ExtResource("8_dchda")
+illustrations = Array[ExtResource("7_oakra")]([SubResource("Resource_5rdh6")])
+character_name = "老师"
+content = Array[ExtResource("6_5vrsw")]([SubResource("Resource_wvth3")])
+choices = Array[ExtResource("5_l1mgl")]([])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.03
+typing_group_delay = 0.03
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_4shlq"]
+script = ExtResource("6_5vrsw")
+text = "虽然现在看来，这样的糕点随处可见，但在那时，这可是救过人的无价之宝呢！"
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_6dtwn"]
+script = ExtResource("8_dchda")
+illustrations = Array[ExtResource("7_oakra")]([])
+character_name = "老师"
+content = Array[ExtResource("6_5vrsw")]([SubResource("Resource_4shlq")])
+choices = Array[ExtResource("5_l1mgl")]([])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.03
+typing_group_delay = 0.03
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_ne5v2"]
+script = ExtResource("6_5vrsw")
+text = "但是，就是这个救了人的糕点，却有可能暗指秦可卿深陷伦理困境的心疾远胜身病，最终“心病”致其早夭。"
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_c2alp"]
+script = ExtResource("7_oakra")
+illustration = 0
+emoji = 0
+position = Vector2(300, 100)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = true
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_3v513"]
+script = ExtResource("8_dchda")
+illustrations = Array[ExtResource("7_oakra")]([SubResource("Resource_c2alp")])
+character_name = "老师"
+content = Array[ExtResource("6_5vrsw")]([SubResource("Resource_ne5v2")])
+choices = Array[ExtResource("5_l1mgl")]([])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.03
+typing_group_delay = 0.03
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_6kvhf"]
+script = ExtResource("6_5vrsw")
+text = "那么，第四道菜，就是糖蒸酥酪了"
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_empti"]
+script = ExtResource("7_oakra")
+illustration = 0
+emoji = 0
+position = Vector2(250, 100)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = true
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_xohnw"]
+script = ExtResource("7_oakra")
+illustration = 5
+emoji = 0
+position = Vector2(700, 100)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = true
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_6mqop"]
+script = ExtResource("8_dchda")
+illustrations = Array[ExtResource("7_oakra")]([SubResource("Resource_empti"), SubResource("Resource_xohnw")])
+character_name = "老师"
+content = Array[ExtResource("6_5vrsw")]([SubResource("Resource_6kvhf")])
+choices = Array[ExtResource("5_l1mgl")]([])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.03
+typing_group_delay = 0.03
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_srmsg"]
+script = ExtResource("6_5vrsw")
+text = "糖蒸酥酪宝玉特意留给袭人的甜品，相当于现在的焦糖双皮奶吧"
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_jmbdb"]
+script = ExtResource("7_oakra")
+illustration = 0
+emoji = 0
+position = Vector2(350, 100)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = true
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_ipr8p"]
+script = ExtResource("7_oakra")
+illustration = 5
+emoji = 0
+position = Vector2(700, 100)
+animation = ""
+trans = 4
+is_appear = false
+is_focus = false
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_kglea"]
+script = ExtResource("8_dchda")
+illustrations = Array[ExtResource("7_oakra")]([SubResource("Resource_jmbdb"), SubResource("Resource_ipr8p")])
+character_name = "老师"
+content = Array[ExtResource("6_5vrsw")]([SubResource("Resource_srmsg")])
+choices = Array[ExtResource("5_l1mgl")]([])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.03
+typing_group_delay = 0.03
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_yspm2"]
+script = ExtResource("6_5vrsw")
+text = "不过，和我们学校的双皮奶比，糖蒸酥酪可以算是珍羞美味了..."
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_rmenk"]
+script = ExtResource("8_dchda")
+illustrations = Array[ExtResource("7_oakra")]([])
+character_name = "老师"
+content = Array[ExtResource("6_5vrsw")]([SubResource("Resource_yspm2")])
+choices = Array[ExtResource("5_l1mgl")]([])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.03
+typing_group_delay = 0.03
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_qovsj"]
+script = ExtResource("6_5vrsw")
+text = "别看双皮奶在现在这么普通，在当时可是引起了很多人的关注。"
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_6up2d"]
+script = ExtResource("7_oakra")
+illustration = 0
+emoji = 0
+position = Vector2(250, 100)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = true
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_y1a6x"]
+script = ExtResource("8_dchda")
+illustrations = Array[ExtResource("7_oakra")]([SubResource("Resource_6up2d")])
+character_name = "老师"
+content = Array[ExtResource("6_5vrsw")]([SubResource("Resource_qovsj")])
+choices = Array[ExtResource("5_l1mgl")]([])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.03
+typing_group_delay = 0.03
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_2n4f4"]
+script = ExtResource("6_5vrsw")
+text = "就比如李嬷嬷偷吃酥酪，引发轩然大波。这也暗写丫鬟阶层对贵族特权的窥伺与争夺，也隐喻宝玉对身边人“雨露均沾”却难以周全的困境。"
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_sxbsl"]
+script = ExtResource("7_oakra")
+illustration = 0
+emoji = 0
+position = Vector2(350, 100)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = true
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_i0eaa"]
+script = ExtResource("8_dchda")
+illustrations = Array[ExtResource("7_oakra")]([SubResource("Resource_sxbsl")])
+character_name = "老师"
+content = Array[ExtResource("6_5vrsw")]([SubResource("Resource_2n4f4")])
+choices = Array[ExtResource("5_l1mgl")]([])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.03
+typing_group_delay = 0.03
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_mhj3p"]
+script = ExtResource("6_5vrsw")
+text = "看来，红楼梦中的美食不仅表现出贾府的富贵，更能表现出其中的腐败呢..."
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_3smrs"]
+script = ExtResource("7_oakra")
+illustration = 0
+emoji = 0
+position = Vector2(400, 100)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = true
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_8ce7p"]
+script = ExtResource("8_dchda")
+illustrations = Array[ExtResource("7_oakra")]([SubResource("Resource_3smrs")])
+character_name = "老师"
+content = Array[ExtResource("6_5vrsw")]([SubResource("Resource_mhj3p")])
+choices = Array[ExtResource("5_l1mgl")]([])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.03
+typing_group_delay = 0.03
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_e7t1i"]
+script = ExtResource("6_5vrsw")
+text = "以上就是《红楼梦》具有代表性的美食了"
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_wi8y0"]
+script = ExtResource("7_oakra")
+illustration = 0
+emoji = 0
+position = Vector2(350, 100)
+animation = ""
+trans = 4
+is_appear = true
+is_focus = true
+Z_index = 1
+metadata/_custom_type_script = "uid://vf85n3f1u1p2"
+
+[sub_resource type="Resource" id="Resource_bu3bn"]
+script = ExtResource("8_dchda")
+illustrations = Array[ExtResource("7_oakra")]([SubResource("Resource_wi8y0")])
+character_name = "老师"
+content = Array[ExtResource("6_5vrsw")]([SubResource("Resource_e7t1i")])
+choices = Array[ExtResource("5_l1mgl")]([])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.03
+typing_group_delay = 0.03
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_qxfx0"]
+script = ExtResource("6_5vrsw")
+text = "《红楼梦》中还有其他各式各样的美食，如牛乳蒸羊羔、火腿炖肘子、玫瑰清露等。而这些，就要等你自己去探索了。"
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_x0o0s"]
+script = ExtResource("8_dchda")
+illustrations = Array[ExtResource("7_oakra")]([])
+character_name = "老师"
+content = Array[ExtResource("6_5vrsw")]([SubResource("Resource_qxfx0")])
+choices = Array[ExtResource("5_l1mgl")]([])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.03
+typing_group_delay = 0.03
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_l5jdp"]
+script = ExtResource("6_5vrsw")
+text = "那么...感谢观看，再见啦！"
+special_effect = ""
+metadata/_custom_type_script = "uid://ba7ux67euxl5s"
+
+[sub_resource type="Resource" id="Resource_injpk"]
+script = ExtResource("8_dchda")
+illustrations = Array[ExtResource("7_oakra")]([])
+character_name = "老师"
+content = Array[ExtResource("6_5vrsw")]([SubResource("Resource_l5jdp")])
+choices = Array[ExtResource("5_l1mgl")]([])
+show_on_left = false
+can_skip = true
+skipped = false
+typing_delay = 0.03
+typing_group_delay = 0.03
+metadata/_custom_type_script = "uid://dbxdwo3h2jrxx"
+
+[sub_resource type="Resource" id="Resource_gu0j7"]
+script = ExtResource("9_lfwuu")
+dialog_list = Array[ExtResource("4_d5xk7")]([SubResource("Resource_471kl"), SubResource("Resource_oakra"), SubResource("Resource_lfwuu"), SubResource("Resource_cq863"), SubResource("Resource_h32mu"), SubResource("Resource_m7kom"), SubResource("Resource_21wge"), SubResource("Resource_cp7ex"), SubResource("Resource_uraqp"), SubResource("Resource_bfokr"), SubResource("Resource_f7mqe"), SubResource("Resource_g28v5"), SubResource("Resource_h716d"), SubResource("Resource_ygn3x"), SubResource("Resource_bgo3x"), SubResource("Resource_mf15r"), SubResource("Resource_svc2d"), SubResource("Resource_hpb8e"), SubResource("Resource_hqmqc"), SubResource("Resource_gc0s6"), SubResource("Resource_nadpk"), SubResource("Resource_t353k"), SubResource("Resource_4y5bj"), SubResource("Resource_32c0v"), SubResource("Resource_lvet4"), SubResource("Resource_c3v7p"), SubResource("Resource_cw6vh"), SubResource("Resource_6dtwn"), SubResource("Resource_3v513"), SubResource("Resource_6mqop"), SubResource("Resource_kglea"), SubResource("Resource_rmenk"), SubResource("Resource_y1a6x"), SubResource("Resource_i0eaa"), SubResource("Resource_8ce7p"), SubResource("Resource_bu3bn"), SubResource("Resource_x0o0s"), SubResource("Resource_injpk")])
+is_in_gaming = false
+can_move = false
+times = 1
+have_played = false
+id = ""
+index_change = 0
+metadata/_custom_type_script = "uid://b7m3hln1ejoun"
+
+[node name="story1" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5vrsw")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(0.7, 0.7, 0.7, 1)
+z_index = -1
+layout_mode = 0
+offset_left = -60.0
+offset_top = -80.0
+offset_right = 1178.0
+offset_bottom = 712.0
+mouse_filter = 2
+texture = ExtResource("2_oakra")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_tcwag")
+autoplay = true
+script = ExtResource("2_f5gp7")
+
+[node name="TextBox" parent="." instance=ExtResource("2_hsn2m")]
+layout_mode = 1
+main_dialog = SubResource("Resource_gu0j7")
+
+[node name="Control" parent="." instance=ExtResource("3_d0kq8")]
+layout_mode = 1
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+z_index = 100
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)

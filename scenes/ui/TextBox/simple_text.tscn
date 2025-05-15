@@ -1,0 +1,102 @@
+[gd_scene load_steps=4 format=3 uid="uid://d1mgt3imt5jnx"]
+
+[ext_resource type="Script" uid="uid://dn1ru3c0fjlob" path="res://scenes/ui/TextBox/simple_text.gd" id="1_8g5rn"]
+[ext_resource type="Resource" uid="uid://lqgn5ovrcmp5" path="res://assets/dialog/test/SinpleDialogTest.tres" id="2_j3ucd"]
+[ext_resource type="Script" uid="uid://5ylall6jftrs" path="res://scenes/ui/TextBox/sub_text.gd" id="3_6bpwy"]
+
+[node name="SimpleText" type="CanvasLayer" node_paths=PackedStringArray("text_box", "buttons", "option1", "option2", "option3", "option4", "input_line", "input_OK")]
+layer = 15
+script = ExtResource("1_8g5rn")
+text_box = NodePath("CenterContainer/Label")
+buttons = NodePath("GridContainer")
+option1 = NodePath("GridContainer/CenterContainer/Button")
+option2 = NodePath("GridContainer/CenterContainer2/Button2")
+option3 = NodePath("GridContainer/CenterContainer3/Button3")
+option4 = NodePath("GridContainer/CenterContainer4/Button4")
+input_line = NodePath("HBoxContainer/LineEdit")
+input_OK = NodePath("HBoxContainer/Button")
+main_dialog = ExtResource("2_j3ucd")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+offset_left = 80.0
+offset_top = 80.0
+offset_right = 560.0
+offset_bottom = 380.0
+size_flags_vertical = 3
+size_flags_stretch_ratio = 3.0
+
+[node name="Label" type="RichTextLabel" parent="CenterContainer"]
+custom_minimum_size = Vector2(480, 200)
+layout_mode = 2
+text = "111"
+scroll_following = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="."]
+offset_left = 268.0
+offset_top = 379.0
+offset_right = 372.0
+offset_bottom = 445.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+columns = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="GridContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="GridContainer/CenterContainer"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+text = "1"
+
+[node name="CenterContainer2" type="CenterContainer" parent="GridContainer"]
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="GridContainer/CenterContainer2"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+text = "2"
+
+[node name="CenterContainer3" type="CenterContainer" parent="GridContainer"]
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="GridContainer/CenterContainer3"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+text = "3"
+
+[node name="CenterContainer4" type="CenterContainer" parent="GridContainer"]
+layout_mode = 2
+
+[node name="Button4" type="Button" parent="GridContainer/CenterContainer4"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+text = "4"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+offset_left = 80.0
+offset_top = 449.0
+offset_right = 560.0
+offset_bottom = 480.0
+
+[node name="LineEdit" type="LineEdit" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+focus_neighbor_right = NodePath("../Button")
+
+[node name="Label" type="Label" parent="HBoxContainer/LineEdit"]
+modulate = Color(1, 1, 1, 0.313726)
+layout_mode = 0
+offset_left = 3.0
+offset_top = 3.0
+offset_right = 51.0
+offset_bottom = 26.0
+text = "请输入"
+script = ExtResource("3_6bpwy")
+
+[node name="Button" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = "OK"
+
+[connection signal="editing_toggled" from="HBoxContainer/LineEdit" to="HBoxContainer/LineEdit/Label" method="_on_line_edit_editing_toggled"]
